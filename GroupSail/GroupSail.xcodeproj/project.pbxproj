@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2C3530616AB4104009479C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C3530516AB4104009479C6 /* UIKit.framework */; };
+		D2C3530816AB4104009479C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C3530716AB4104009479C6 /* Foundation.framework */; };
+		D2C3530A16AB4104009479C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C3530916AB4104009479C6 /* CoreGraphics.framework */; };
+		D2C3531016AB4105009479C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2C3530E16AB4105009479C6 /* InfoPlist.strings */; };
+		D2C3531216AB4105009479C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C3531116AB4105009479C6 /* main.m */; };
+		D2C3531616AB4105009479C6 /* GSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C3531516AB4105009479C6 /* GSAppDelegate.m */; };
+		D2C3531816AB4105009479C6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C3531716AB4105009479C6 /* Default.png */; };
+		D2C3531A16AB4105009479C6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C3531916AB4105009479C6 /* Default@2x.png */; };
+		D2C3531C16AB4105009479C6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C3531B16AB4105009479C6 /* Default-568h@2x.png */; };
+		D2C3531F16AB4105009479C6 /* GSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C3531E16AB4105009479C6 /* GSViewController.m */; };
+		D2C3532216AB4105009479C6 /* GSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C3532016AB4105009479C6 /* GSViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D2C3530116AB4104009479C6 /* GroupSail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupSail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C3530516AB4104009479C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D2C3530716AB4104009479C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2C3530916AB4104009479C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D2C3530D16AB4105009479C6 /* GroupSail-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GroupSail-Info.plist"; sourceTree = "<group>"; };
+		D2C3530F16AB4105009479C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2C3531116AB4105009479C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2C3531316AB4105009479C6 /* GroupSail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GroupSail-Prefix.pch"; sourceTree = "<group>"; };
+		D2C3531416AB4105009479C6 /* GSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSAppDelegate.h; sourceTree = "<group>"; };
+		D2C3531516AB4105009479C6 /* GSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSAppDelegate.m; sourceTree = "<group>"; };
+		D2C3531716AB4105009479C6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D2C3531916AB4105009479C6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D2C3531B16AB4105009479C6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D2C3531D16AB4105009479C6 /* GSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSViewController.h; sourceTree = "<group>"; };
+		D2C3531E16AB4105009479C6 /* GSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSViewController.m; sourceTree = "<group>"; };
+		D2C3532116AB4105009479C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GSViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2C352FE16AB4104009479C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C3530616AB4104009479C6 /* UIKit.framework in Frameworks */,
+				D2C3530816AB4104009479C6 /* Foundation.framework in Frameworks */,
+				D2C3530A16AB4104009479C6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2C352F616AB4104009479C6 = {
+			isa = PBXGroup;
+			children = (
+				D2C3530B16AB4104009479C6 /* GroupSail */,
+				D2C3530416AB4104009479C6 /* Frameworks */,
+				D2C3530216AB4104009479C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2C3530216AB4104009479C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2C3530116AB4104009479C6 /* GroupSail.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2C3530416AB4104009479C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2C3530516AB4104009479C6 /* UIKit.framework */,
+				D2C3530716AB4104009479C6 /* Foundation.framework */,
+				D2C3530916AB4104009479C6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2C3530B16AB4104009479C6 /* GroupSail */ = {
+			isa = PBXGroup;
+			children = (
+				D2C3531416AB4105009479C6 /* GSAppDelegate.h */,
+				D2C3531516AB4105009479C6 /* GSAppDelegate.m */,
+				D2C3531D16AB4105009479C6 /* GSViewController.h */,
+				D2C3531E16AB4105009479C6 /* GSViewController.m */,
+				D2C3532016AB4105009479C6 /* GSViewController.xib */,
+				D2C3530C16AB4105009479C6 /* Supporting Files */,
+			);
+			path = GroupSail;
+			sourceTree = "<group>";
+		};
+		D2C3530C16AB4105009479C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2C3530D16AB4105009479C6 /* GroupSail-Info.plist */,
+				D2C3530E16AB4105009479C6 /* InfoPlist.strings */,
+				D2C3531116AB4105009479C6 /* main.m */,
+				D2C3531316AB4105009479C6 /* GroupSail-Prefix.pch */,
+				D2C3531716AB4105009479C6 /* Default.png */,
+				D2C3531916AB4105009479C6 /* Default@2x.png */,
+				D2C3531B16AB4105009479C6 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2C3530016AB4104009479C6 /* GroupSail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C3532516AB4105009479C6 /* Build configuration list for PBXNativeTarget "GroupSail" */;
+			buildPhases = (
+				D2C352FD16AB4104009479C6 /* Sources */,
+				D2C352FE16AB4104009479C6 /* Frameworks */,
+				D2C352FF16AB4104009479C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GroupSail;
+			productName = GroupSail;
+			productReference = D2C3530116AB4104009479C6 /* GroupSail.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2C352F816AB4104009479C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GS;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = GroupSail;
+			};
+			buildConfigurationList = D2C352FB16AB4104009479C6 /* Build configuration list for PBXProject "GroupSail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D2C352F616AB4104009479C6;
+			productRefGroup = D2C3530216AB4104009479C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2C3530016AB4104009479C6 /* GroupSail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2C352FF16AB4104009479C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C3531016AB4105009479C6 /* InfoPlist.strings in Resources */,
+				D2C3531816AB4105009479C6 /* Default.png in Resources */,
+				D2C3531A16AB4105009479C6 /* Default@2x.png in Resources */,
+				D2C3531C16AB4105009479C6 /* Default-568h@2x.png in Resources */,
+				D2C3532216AB4105009479C6 /* GSViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2C352FD16AB4104009479C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C3531216AB4105009479C6 /* main.m in Sources */,
+				D2C3531616AB4105009479C6 /* GSAppDelegate.m in Sources */,
+				D2C3531F16AB4105009479C6 /* GSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2C3530E16AB4105009479C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2C3530F16AB4105009479C6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D2C3532016AB4105009479C6 /* GSViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2C3532116AB4105009479C6 /* en */,
+			);
+			name = GSViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2C3532316AB4105009479C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2C3532416AB4105009479C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2C3532616AB4105009479C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GroupSail/GroupSail-Prefix.pch";
+				INFOPLIST_FILE = "GroupSail/GroupSail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D2C3532716AB4105009479C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GroupSail/GroupSail-Prefix.pch";
+				INFOPLIST_FILE = "GroupSail/GroupSail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2C352FB16AB4104009479C6 /* Build configuration list for PBXProject "GroupSail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C3532316AB4105009479C6 /* Debug */,
+				D2C3532416AB4105009479C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C3532516AB4105009479C6 /* Build configuration list for PBXNativeTarget "GroupSail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C3532616AB4105009479C6 /* Debug */,
+				D2C3532716AB4105009479C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2C352F816AB4104009479C6 /* Project object */;
+}
