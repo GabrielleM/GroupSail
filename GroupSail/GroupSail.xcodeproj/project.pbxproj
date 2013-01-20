@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92402CDB16AB86DB0048A23F /* GSGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92402CD916AB86DB0048A23F /* GSGroupViewController.m */; };
+		92402CDC16AB86DB0048A23F /* GSGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92402CDA16AB86DB0048A23F /* GSGroupViewController.xib */; };
 		D20369CE16AB6C420032AB2C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20369CD16AB6C420032AB2C /* Parse.framework */; };
 		D20369D016AB6C780032AB2C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20369CF16AB6C780032AB2C /* AudioToolbox.framework */; };
 		D20369D216AB6C7F0032AB2C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20369D116AB6C7F0032AB2C /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -43,6 +45,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92402CD816AB86DB0048A23F /* GSGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSGroupViewController.h; sourceTree = "<group>"; };
+		92402CD916AB86DB0048A23F /* GSGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSGroupViewController.m; sourceTree = "<group>"; };
+		92402CDA16AB86DB0048A23F /* GSGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSGroupViewController.xib; sourceTree = "<group>"; };
 		D20369CD16AB6C420032AB2C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D20369CF16AB6C780032AB2C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D20369D116AB6C7F0032AB2C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -173,6 +178,9 @@
 				D20369F416AB77020032AB2C /* GSTeacherViewController.h */,
 				D20369F516AB77020032AB2C /* GSTeacherViewController.m */,
 				D20369F616AB77020032AB2C /* GSTeacherViewController.xib */,
+				92402CD816AB86DB0048A23F /* GSGroupViewController.h */,
+				92402CD916AB86DB0048A23F /* GSGroupViewController.m */,
+				92402CDA16AB86DB0048A23F /* GSGroupViewController.xib */,
 				D29234EF16AB4EA700C26827 /* GSStudentViewController.h */,
 				D29234F016AB4EA700C26827 /* GSStudentViewController.m */,
 				D29234F116AB4EA700C26827 /* GSStudentViewController.xib */,
@@ -264,6 +272,7 @@
 				D20369F816AB77020032AB2C /* GSClassTableViewCell.xib in Resources */,
 				D20369FA16AB77020032AB2C /* GSGroupTableViewCell.xib in Resources */,
 				D20369FC16AB77020032AB2C /* GSTeacherViewController.xib in Resources */,
+				92402CDC16AB86DB0048A23F /* GSGroupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +290,7 @@
 				D20369F716AB77020032AB2C /* GSClassTableViewCell.m in Sources */,
 				D20369F916AB77020032AB2C /* GSGroupTableViewCell.m in Sources */,
 				D20369FB16AB77020032AB2C /* GSTeacherViewController.m in Sources */,
+				92402CDB16AB86DB0048A23F /* GSGroupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
