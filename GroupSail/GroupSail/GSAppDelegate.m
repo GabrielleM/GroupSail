@@ -7,13 +7,16 @@
 //
 
 #import "GSAppDelegate.h"
-
 #import "GSViewController.h"
+#import <Parse/Parse.h>
 
 @implementation GSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse setApplicationId:@"x0kkUZaZ0KPjRiIdNoyFTYM1b25kOzt5wQmCJajj"
+                  clientKey:@"B28CCnFYfK3rsgaFFdzwdZOu1HonxsG3PU23dZJt"];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[GSViewController alloc] initWithNibName:@"GSViewController" bundle:nil];
