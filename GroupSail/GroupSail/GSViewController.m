@@ -8,7 +8,7 @@
 
 #import "GSViewController.h"
 #import "GSTeacherViewController.h"
-#import <Parse/Parse.h>
+#import "GSStudentViewController.h"
 
 @interface GSViewController ()
 
@@ -20,15 +20,15 @@
     GSTeacherViewController *teacherVC = [[GSTeacherViewController alloc] init];
     [self.navigationController pushViewController:teacherVC animated:YES];
 }
-- (IBAction)studentPressed:(UIButton *)sender {
+- (IBAction)studentPressed:(UIButton *)sender
+{
+    GSStudentViewController *studentVC = [[GSStudentViewController alloc] init];
+    [self.navigationController pushViewController:studentVC animated:YES];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    [testObject setObject:@"bar" forKey:@"foo"];
-    [testObject save];
 }
 
 @end

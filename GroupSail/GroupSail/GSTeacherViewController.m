@@ -11,43 +11,49 @@
 #import <Parse/Parse.h>
 
 @interface GSTeacherViewController ()
-
+@property (nonatomic, strong) NSArray *classes;
 @end
 
 @implementation GSTeacherViewController
 @synthesize tableView = _tableView;
+@synthesize classes = _classes;
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return self.classes.count;
 }
 
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   static NSString *teacherTableIdentifier = @"GSTableViewCell";
-   
-  GSClassTableViewCell *cell = (GSClassTableViewCell *)[tableView dequeueReusableCellWithIdentifier:teacherTableIdentifier];
+    
+  GSClassTableViewCell *cell = (GSClassTableViewCell *)[tableView dequeueReusableCellWithIdentifier:[GSClassTableViewCell reuseIdentifier]];
+    
    if (cell == nil)
    {
-      NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"GSClassTableViewCell" owner:self options:nil];
-      cell = [nib objectAtIndex:0];
+      cell = [[[NSBundle mainBundle] loadNibNamed:@"GSClassTableViewCell" owner:nil options:nil] objectAtIndex:0];
    }
-/*
-   cell.subjectLabel.text = [tableData objectAtIndex:indexPath.row];
-   cell.projectLabel.text = [tableData objectAtIndex:indexPath.row];
-   cell.numGroupsLabel.text = [tableData objectAtIndex:indexPath.row];
-    cell.dueDateLabel.text = [tableData objectAtIndex:indexPath.row];
-   
-   cell.ImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
-*/
+    
+    PFObject *class = [self.classes objectAtIndex:indexPath.row];
+    
+    cell.subjectLabel.text = [class objectForKey:@"title"];
+    cell.projectLabel.text = [class objectForKey:@"projectName"];
+    cell.numGroupsLabel.text = [NSString stringWithFormat:@"%@ Groups",[class objectForKey:@"numGroups"]];
+    cell.dueDateLabel.text = [class objectForKey:@"dueDate"];
    
    return cell;
    
-   
-   
-   
 }
+
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 126;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -63,19 +69,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   // self.tableView.delegate = self;
-   // self.tableView.dataSource = self;
     
     PFQuery *query = [PFQuery queryWithClassName:@"Class"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.
-            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            
+            NSLog(@"find success");
+            self.classes = [NSArray arrayWithArray:objects];
+            self.tableView.dataSource = self;
+            self.tableView.delegate = self;
+            [self.tableView reloadData];
+            
+
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
+    
+
 }
 
 @end

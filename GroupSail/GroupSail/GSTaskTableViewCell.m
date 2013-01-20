@@ -1,26 +1,23 @@
 //
-//  GSClassTableViewCell.m
+//  GSTaskTableViewCell.m
 //  GroupSail
 //
-//  Created by Gabrielle Miller-Messner on 1/19/13.
+//  Created by ENTY on 13-01-19.
 //  Copyright (c) 2013 GroupSail. All rights reserved.
 //
 
-#import "GSClassTableViewCell.h"
+#import "GSTaskTableViewCell.h"
 
-@implementation GSClassTableViewCell
-@synthesize subjectLabel = _subjectLabel;
-@synthesize projectLabel = _projectLabel;
-@synthesize numGroupsLabel = _numGroupsLabel;
-@synthesize dueDateLabel = _dueDateLabel;
-@synthesize flagImageView = _flagImageView;
+@implementation GSTaskTableViewCell
 
-+ (NSString *) reuseIdentifier
+@synthesize checkButton = _checkButton;
+@synthesize taskLabel = _taskLabel;
+@synthesize studentButton = _studentButton;
+
++(NSString *) reuseIdentifier
 {
-    return @"ClassCellIdentifier";
+    return @"TaskCellIdentifier";
 }
-
-
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

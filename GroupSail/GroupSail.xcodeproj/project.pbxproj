@@ -42,6 +42,8 @@
 		D2C3531C16AB4105009479C6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C3531B16AB4105009479C6 /* Default-568h@2x.png */; };
 		D2C3531F16AB4105009479C6 /* GSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C3531E16AB4105009479C6 /* GSViewController.m */; };
 		D2C3532216AB4105009479C6 /* GSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C3532016AB4105009479C6 /* GSViewController.xib */; };
+		D2F4909C16AB876400B38FB7 /* GSTaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F4909B16AB876400B38FB7 /* GSTaskTableViewCell.m */; };
+		D2F4909F16AB882900B38FB7 /* GSTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F4909E16AB882900B38FB7 /* GSTaskTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,9 @@
 		D2C3531D16AB4105009479C6 /* GSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSViewController.h; sourceTree = "<group>"; };
 		D2C3531E16AB4105009479C6 /* GSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSViewController.m; sourceTree = "<group>"; };
 		D2C3532116AB4105009479C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GSViewController.xib; sourceTree = "<group>"; };
+		D2F4909A16AB876400B38FB7 /* GSTaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTaskTableViewCell.h; sourceTree = "<group>"; };
+		D2F4909B16AB876400B38FB7 /* GSTaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTaskTableViewCell.m; sourceTree = "<group>"; };
+		D2F4909E16AB882900B38FB7 /* GSTaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSTaskTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +192,12 @@
 				D20369EE16AB77020032AB2C /* GSClassTableViewCell.h */,
 				D20369EF16AB77020032AB2C /* GSClassTableViewCell.m */,
 				D20369F016AB77020032AB2C /* GSClassTableViewCell.xib */,
+				D29234EF16AB4EA700C26827 /* GSStudentViewController.h */,
+				D29234F016AB4EA700C26827 /* GSStudentViewController.m */,
+				D29234F116AB4EA700C26827 /* GSStudentViewController.xib */,
+				D2F4909A16AB876400B38FB7 /* GSTaskTableViewCell.h */,
+				D2F4909B16AB876400B38FB7 /* GSTaskTableViewCell.m */,
+				D2F4909E16AB882900B38FB7 /* GSTaskTableViewCell.xib */,
 				D20369F116AB77020032AB2C /* GSGroupTableViewCell.h */,
 				D20369F216AB77020032AB2C /* GSGroupTableViewCell.m */,
 				D20369F316AB77020032AB2C /* GSGroupTableViewCell.xib */,
@@ -273,6 +284,7 @@
 				D20369FA16AB77020032AB2C /* GSGroupTableViewCell.xib in Resources */,
 				D20369FC16AB77020032AB2C /* GSTeacherViewController.xib in Resources */,
 				92402CDC16AB86DB0048A23F /* GSGroupViewController.xib in Resources */,
+				D2F4909F16AB882900B38FB7 /* GSTaskTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +303,7 @@
 				D20369F916AB77020032AB2C /* GSGroupTableViewCell.m in Sources */,
 				D20369FB16AB77020032AB2C /* GSTeacherViewController.m in Sources */,
 				92402CDB16AB86DB0048A23F /* GSGroupViewController.m in Sources */,
+				D2F4909C16AB876400B38FB7 /* GSTaskTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
