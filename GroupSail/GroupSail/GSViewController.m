@@ -7,6 +7,7 @@
 //
 
 #import "GSViewController.h"
+#import "GSTeacherViewController.h"
 #import <Parse/Parse.h>
 
 @interface GSViewController ()
@@ -16,7 +17,8 @@
 @implementation GSViewController
 - (IBAction)teacherPressed:(UIButton *)sender
 {
-
+    GSTeacherViewController *teacherVC = [[GSTeacherViewController alloc] init];
+    [self.navigationController pushViewController:teacherVC animated:YES];
 }
 - (IBAction)studentPressed:(UIButton *)sender {
 }
