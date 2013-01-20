@@ -23,6 +23,10 @@
     return self.classes.count;
 }
 
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -31,7 +35,7 @@
     
    if (cell == nil)
    {
-      cell = [[[NSBundle mainBundle] loadNibNamed:@"GSClassTableViewCell" owner:self options:nil] objectAtIndex:0];
+      cell = [[[NSBundle mainBundle] loadNibNamed:@"GSClassTableViewCell" owner:nilu888m options:nil] objectAtIndex:0];
    }
     
     PFObject *class = [self.classes objectAtIndex:indexPath.row];
