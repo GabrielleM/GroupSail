@@ -15,7 +15,10 @@
 @synthesize dueDateLabel = _dueDateLabel;
 @synthesize flagImageView = _flagImageView;
 
-
++ (NSString *) reuseIdentifier
+{
+    return @"ClassCellIdentifier";
+}
 
 
 

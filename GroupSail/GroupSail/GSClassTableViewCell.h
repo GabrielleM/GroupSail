@@ -15,4 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *dueDateLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *flagImageView;
 
++ (NSString *) reuseIdentifier;
+
 @end
