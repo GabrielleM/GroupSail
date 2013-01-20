@@ -21,7 +21,7 @@
 @synthesize tableView = _tableView;
 @synthesize milestones = _milestones;
 @synthesize tasks = _tasks;
-
+@synthesize progressView = _progressView;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -55,7 +55,17 @@
 {
     return 67.f;
 }
-     
+
+- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return self.progressView;
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return self.progressView.frame.size.height;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -72,8 +82,6 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.
-            
-            NSLog(@"%@",objects);
             self.tasks = [NSArray arrayWithArray:objects];
             self.tableView.dataSource = self;
             self.tableView.delegate = self;
